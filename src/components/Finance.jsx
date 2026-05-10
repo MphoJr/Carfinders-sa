@@ -1,7 +1,7 @@
 export default function Finance() {
   return (
     <section
-      id="Finance"
+      id="finance"
       style={{ padding: "60px 20px", background: "var(--charcoal)" }}
     >
       <h2>Vehicle Finance Made Easy</h2>

@@ -11,7 +11,7 @@ export default function WhyChooseUs() {
 
   return (
     <section
-      id="WhyChooseUs"
+      id="whychooseus"
       style={{ padding: "60px 20px", background: "var(--charcoal)" }}
     >
       <h2>Why Clients Choose CarFinders SA</h2>

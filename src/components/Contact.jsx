@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section
-      id="Contact"
+      id="contact"
       style={{ padding: "60px 20px", background: "var(--charcoal)" }}
     >
       <h2>Let's Find Your Perfect Match</h2>

@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section
-      id="About"
+      id="about"
       style={{ padding: "60px 20px", background: "var(--charcoal)" }}
     >
       <h2>Who We Are</h2>
