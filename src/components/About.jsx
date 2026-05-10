@@ -1,6 +1,9 @@
 export default function About() {
   return (
-    <section style={{ padding: "60px 20px", background: "var(--charcoal)" }}>
+    <section
+      id="About"
+      style={{ padding: "60px 20px", background: "var(--charcoal)" }}
+    >
       <h2>Who We Are</h2>
       <p>
         CarFinders South Africa is a professional vehicle sourcing agency

@@ -6,7 +6,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section id="Testimonials" style={{ padding: "60px 20px" }}>
       <h2>What Our Clients Say</h2>
       <div style={{ display: "grid", gap: "20px" }}>
         {testimonials.map((t, i) => (

@@ -1,6 +1,9 @@
 export default function Contact() {
   return (
-    <section style={{ padding: "60px 20px", background: "var(--charcoal)" }}>
+    <section
+      id="Contact"
+      style={{ padding: "60px 20px", background: "var(--charcoal)" }}
+    >
       <h2>Let's Find Your Perfect Match</h2>
       <p>
         Phone: 068 159 3340 | Email: carfinderssa@gmail.com | Website:

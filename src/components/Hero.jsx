@@ -1,6 +1,7 @@
 export default function Hero() {
   return (
     <section
+      id="Hero"
       className="hero"
       style={{ textAlign: "center", padding: "80px 20px" }}
     >

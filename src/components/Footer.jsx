@@ -1,6 +1,7 @@
 export default function Footer() {
   return (
     <footer
+      id="Footer"
       style={{
         padding: "40px 20px",
         background: "var(--black)",

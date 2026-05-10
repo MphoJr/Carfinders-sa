@@ -7,7 +7,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section id="HowItWorks" style={{ padding: "60px 20px" }}>
       <h2>Simple. Smart. Stress-Free.</h2>
       <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
         {steps.map((s, i) => (

@@ -10,7 +10,10 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section style={{ padding: "60px 20px", background: "var(--charcoal)" }}>
+    <section
+      id="WhyChooseUs"
+      style={{ padding: "60px 20px", background: "var(--charcoal)" }}
+    >
       <h2>Why Clients Choose CarFinders SA</h2>
       <ul>
         {features.map((f, i) => (

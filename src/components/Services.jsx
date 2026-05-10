@@ -23,7 +23,7 @@ export default function Services() {
   ];
 
   return (
-    <section style={{ padding: "60px 20px" }}>
+    <section id="Services" style={{ padding: "60px 20px" }}>
       <h2>What We Do</h2>
       <div
         style={{
