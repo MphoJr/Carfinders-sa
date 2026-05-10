@@ -5,3 +5,43 @@
   --charcoal: #1a1a1a;
   --white: #ffffff;
 }
+
+body {
+  margin: 0;
+  font-family: "Poppins", "Open Sans", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+button {
+  border-radius: 6px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.primary {
+  background: var(--gold);
+  color: var(--black);
+}
+
+button.primary:hover {
+  box-shadow: 0 0 10px var(--gold);
+}
+
+button.secondary {
+  background: transparent;
+  border: 2px solid var(--gold);
+  color: var(--white);
+}
+
+button.secondary:hover {
+  background: var(--gold);
+  color: var(--black);
+}
