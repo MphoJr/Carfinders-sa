@@ -33,7 +33,9 @@ export default function Counters() {
         textAlign: "center",
       }}
     >
-      <h2 style={{ color: "var(--gold)" }}>Our Achievements</h2>
+      <h2 style={{ color: "var(--gold)", fontSize: "4rem" }}>
+        Our Achievements
+      </h2>
       <div
         style={{
           display: "flex",
@@ -45,7 +47,7 @@ export default function Counters() {
       >
         {stats.map((s, i) => (
           <div key={i} style={{ flex: "1 1 200px", color: "var(--white)" }}>
-            <h3 style={{ fontSize: "2.5rem", color: "var(--gold)" }}>
+            <h3 style={{ fontSize: "4rem", color: "var(--gold)" }}>
               {counts[i]}
             </h3>
             <p>{s.label}</p>

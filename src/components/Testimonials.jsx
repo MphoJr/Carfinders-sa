@@ -1,25 +1,31 @@
 export default function Testimonials() {
   const testimonials = [
-    "CarFinders SA made the entire process stress-free. They helped me secure a great vehicle at an amazing deal.",
-    "Professional service from start to finish. Highly recommended.",
-    "They found exactly what I wanted and handled everything professionally.",
+    {
+      name: "Thabo M.",
+      feedback:
+        "CarFinders SA made the entire process stress-free. They helped me secure a great vehicle at an amazing deal.",
+    },
+    {
+      name: "Naledi K.",
+      feedback:
+        "Professional service from start to finish. Highly recommended.",
+    },
+    {
+      name: "Sipho D.",
+      feedback:
+        "They found exactly what I wanted and handled everything professionally.",
+    },
   ];
 
   return (
-    <section id="testimonials" style={{ padding: "60px 20px" }}>
-      <h2>What Our Clients Say</h2>
-      <div style={{ display: "grid", gap: "20px" }}>
+    <section id="testimonials" className="testimonials-section">
+      <h2 className="testimonials-heading">What Our Clients Say</h2>
+      <div className="testimonials-grid">
         {testimonials.map((t, i) => (
-          <blockquote
-            key={i}
-            style={{
-              background: "var(--charcoal)",
-              padding: "20px",
-              borderRadius: "8px",
-            }}
-          >
-            {t}
-          </blockquote>
+          <div key={i} className="testimonial-card">
+            <p className="testimonial-feedback">“{t.feedback}”</p>
+            <h4 className="testimonial-name">— {t.name}</h4>
+          </div>
         ))}
       </div>
     </section>

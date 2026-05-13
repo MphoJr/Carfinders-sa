@@ -372,3 +372,61 @@ form button {
   text-shadow: 0 0 10px var(--gold);
   font-size: 4rem;
 }
+
+.testimonials-section {
+  padding: 60px 20px;
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+.testimonials-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  color: var(--gold);
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.testimonial-card {
+  background: var(--black);
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 300px;
+  max-width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-feedback {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.testimonial-name {
+  text-align: right;
+  color: var(--gold);
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .testimonials-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    max-width: 100%;
+  }
+}
