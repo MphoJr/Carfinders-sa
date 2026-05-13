@@ -22,9 +22,7 @@ function App() {
       <Hero />
       <About />
       <Services />
-      <WhyChooseUs />
       <Testimonials />
-      <FAQ />
       <Counters />
       <Contact />
       <Footer />
