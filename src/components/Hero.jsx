@@ -3,7 +3,7 @@ import heroImage from "../assets/images/Driven.jpeg";
 export default function Hero() {
   return (
     <section id="hero" className="hero">
-      <h1>Find Your Perfect Vehicle With Confidence.</h1>
+      <h1 font-size="3rem">Find Your Perfect Vehicle With Confidence.</h1>
       <p>
         We help South Africans source quality vehicles, compare the best deals,
         negotiate with trusted dealerships, and secure vehicle finance - all
