@@ -23,12 +23,12 @@ function App() {
       <About />
       <Services />
       <WhyChooseUs />
-      <HowItWorks />
-      <Finance />
+
       <Testimonials />
+      <FAQ />
+
       <Counters />
       <Contact />
-      <FAQ />
 
       <Footer />
       <WhatsAppButton />

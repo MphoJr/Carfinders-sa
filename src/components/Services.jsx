@@ -1,46 +1,40 @@
+import sourcingImg from "../assets/images/hold.jpeg";
+import negotiationImg from "../assets/images/Quality.jpeg";
+import financeImg from "../assets/images/Negotiate.jpeg";
+import tradeinImg from "../assets/images/Perfect.jpeg";
+import nationwideImg from "../assets/images/Process.jpeg";
+
 export default function Services() {
   const services = [
     {
       title: "Vehicle Sourcing",
       desc: "Find quality vehicles that match your budget, preferences, and lifestyle.",
+      img: sourcingImg,
     },
     {
       title: "Deal Negotiation",
       desc: "We negotiate with dealerships to secure the best possible pricing and value.",
+      img: negotiationImg,
     },
     {
       title: "Finance Assistance",
       desc: "We assist clients with vehicle finance applications through trusted partners.",
-    },
-    {
-      title: "Trade-In Assistance",
-      desc: "Simplify the process of trading in your current vehicle.",
+      img: financeImg,
     },
     {
       title: "Nationwide Assistance",
       desc: "We work with dealerships across South Africa to find your perfect vehicle.",
+      img: nationwideImg,
     },
   ];
 
   return (
-    <section id="services" style={{ padding: "60px 20px" }}>
+    <section id="services" className="services">
       <h2>What We Do</h2>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-          gap: "20px",
-        }}
-      >
+      <div className="services-grid">
         {services.map((s, i) => (
-          <div
-            key={i}
-            style={{
-              background: "var(--charcoal)",
-              padding: "20px",
-              borderRadius: "8px",
-            }}
-          >
+          <div key={i} className="service-card">
+            <img src={s.img} alt={s.title} className="service-img" />
             <h3>{s.title}</h3>
             <p>{s.desc}</p>
           </div>
