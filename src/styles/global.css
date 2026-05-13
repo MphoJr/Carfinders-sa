@@ -141,3 +141,50 @@ button.secondary:hover {
   background: var(--soft-gold);
   transform: scale(1.1);
 }
+
+/* Typography scaling */
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive sections */
+section {
+  padding: 40px 15px;
+}
+
+/* Grid responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    padding: 30px 10px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 768px) {
+  .testimonial {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}
+form input,
+form textarea,
+form button {
+  width: 100%;
+}
