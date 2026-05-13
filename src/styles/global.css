@@ -265,3 +265,13 @@ form button {
   border-radius: 8px;
   margin-bottom: 15px;
 }
+
+.services h2 {
+  font-size: clamp(4rem, 4vw, 1.5rem);
+}
+.services p {
+  font-size: clamp(1.5rem, 2vw, 0.9rem);
+}
+.services .service-card h3 {
+  font-size: clamp(1.7rem, 2vw, 1.2rem);
+}

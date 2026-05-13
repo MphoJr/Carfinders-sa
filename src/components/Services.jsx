@@ -30,7 +30,7 @@ export default function Services() {
 
   return (
     <section id="services" className="services">
-      <h2>What We Do</h2>
+      <h2 font-size="2rem">What We Do</h2>
       <div className="services-grid">
         {services.map((s, i) => (
           <div key={i} className="service-card">
