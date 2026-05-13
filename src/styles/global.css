@@ -275,3 +275,67 @@ form button {
 .services .service-card h3 {
   font-size: clamp(1.7rem, 2vw, 1.2rem);
 }
+
+.contact-section {
+  padding: 60px 20px;
+  background: var(--charcoal);
+  color: var(--white);
+}
+
+.contact-heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: clamp(4rem, 4vw, 2rem);
+  color: var(--gold);
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+  align-items: start;
+}
+
+.contact-details {
+  font-size: 1.1rem;
+  margin-top: 35px;
+  line-height: 1.8;
+}
+
+.contact-form {
+  display: grid;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-details h3 {
+  font-size: clamp(1.5rem, 2vw, 1.2rem);
+}
+.contact-details p {
+  font-size: clamp(2.1rem, 2vw, 0.9rem);
+}
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr; /* stack vertically */
+    gap: 20px;
+  }
+
+  .contact-details {
+    text-align: center;
+  }
+}
