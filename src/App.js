@@ -10,6 +10,8 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import ContactBar from "./components/ContactBar";
+import FAQ from "./components/FAQ";
+import Counters from "./components/Counters";
 
 import "./styles/global.css";
 
@@ -24,9 +26,13 @@ function App() {
       <HowItWorks />
       <Finance />
       <Testimonials />
+      <Counters />
       <Contact />
+      <FAQ />
+
       <Footer />
       <WhatsAppButton />
+
       <ContactBar />
     </>
   );
