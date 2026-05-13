@@ -22,7 +22,7 @@ export default function Counters() {
     }, 30);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [stats]);
 
   return (
     <section

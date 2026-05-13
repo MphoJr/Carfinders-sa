@@ -1,7 +1,6 @@
 import sourcingImg from "../assets/images/hold.jpeg";
 import negotiationImg from "../assets/images/Quality.jpeg";
 import financeImg from "../assets/images/Negotiate.jpeg";
-import tradeinImg from "../assets/images/Perfect.jpeg";
 import nationwideImg from "../assets/images/Process.jpeg";
 
 export default function Services() {

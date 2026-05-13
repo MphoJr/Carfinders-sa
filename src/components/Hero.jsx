@@ -1,5 +1,3 @@
-import heroImage from "../assets/images/Driven.jpeg";
-
 export default function Hero() {
   return (
     <section id="hero" className="hero">
