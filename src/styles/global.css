@@ -188,3 +188,42 @@ form textarea,
 form button {
   width: 100%;
 }
+
+.hero {
+  position: relative;
+  background: url("../assets/images/Driven.jpeg") center/cover no-repeat;
+  color: var(--white);
+  text-align: center;
+  padding: 300px 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+}
+
+.hero h1,
+.hero p,
+.hero button {
+  position: relative; /* ensures text sits above overlay */
+  z-index: 1;
+}
+
+.hero h1 {
+  text-shadow: 0 0 15px var(--gold); /* gold glow effect */
+}
+
+.hero button.primary {
+  box-shadow: 0 0 10px var(--gold);
+}
+
+.hero h1 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+.hero p {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  max-width: 600px;
+  margin: auto;
+}
