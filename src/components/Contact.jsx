@@ -5,15 +5,18 @@ export default function Contact() {
       <div className="contact-container">
         {/* Left side: contact details */}
         <div className="contact-details">
-          <p>
-            <strong>Phone:</strong> 068 159 3340
-          </p>
-          <p>
-            <strong>Email:</strong> carfinderssa@gmail.com
-          </p>
-          <p>
-            <strong>Website:</strong> www.carfinderssa.co.za
-          </p>
+          <div className="detail-item">
+            <span className="detail-icon">📞</span>
+            <p>068 159 3340</p>
+          </div>
+          <div className="detail-item">
+            <span className="detail-icon">✉️</span>
+            <p>carfinderssa@gmail.com</p>
+          </div>
+          <div className="detail-item">
+            <span className="detail-icon">🌐</span>
+            <p>www.carfinderssa.co.za</p>
+          </div>
         </div>
 
         {/* Right side: form */}
