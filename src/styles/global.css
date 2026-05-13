@@ -328,7 +328,7 @@ form button {
 .contact-form input,
 .contact-form textarea,
 .contact-form button {
-  width: 100%;
+  width: 95%;
   padding: 12px;
   border-radius: 6px;
   border: none;
