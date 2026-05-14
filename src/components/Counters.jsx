@@ -1,12 +1,16 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 export default function Counters() {
-  const stats = [
-    { label: "Cars Sourced", target: 1200 },
-    { label: "Clients Helped", target: 850 },
-    { label: "Deals Negotiated", target: 500 },
-    { label: "Nationwide Partners", target: 100 },
-  ];
+  // ✅ useMemo ensures stats is stable across renders
+  const stats = useMemo(
+    () => [
+      { label: "Cars Sourced", target: 1200 },
+      { label: "Clients Helped", target: 850 },
+      { label: "Deals Negotiated", target: 500 },
+      { label: "Nationwide Partners", target: 100 },
+    ],
+    [],
+  );
 
   const [counts, setCounts] = useState(stats.map(() => 0));
 
@@ -22,7 +26,7 @@ export default function Counters() {
     }, 30);
 
     return () => clearInterval(interval);
-  }, [stats]);
+  }, [stats]); // ✅ now stats is stable
 
   return (
     <section
